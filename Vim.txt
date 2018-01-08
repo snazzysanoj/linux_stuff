@@ -1,0 +1,64 @@
+Navigation:
+	h - Left 
+	j - Down
+	k - Up
+	l - Right
+
+Advanced Navigation:
+	w  - Goto beginning of word(Forward)
+	b  - Goto beginning of word(Backward)
+	e  - Goto End of Word
+	G  - Goto end of file
+	gg - Goto start of file
+	#g - Goto Line # (Ctrl+G shows line number)
+	%  - Goto start/end of matching paranthesis like {},[],()
+
+Modes: (ESC returns to Normal Mode)
+	v - Visual Mode
+	i - Insert Mode (Current position)
+	a - Insert Mode (Append) 
+	A - Insert Mode (End of Line)
+	o - Append New Line and Insert Mode
+	O - Prepend New Line and Insert Mode
+		
+General: (Append ! to force action ignoring errors)	
+	:w - Write to file
+	:r - Insert from file
+	:q - Quit
+
+Clipboard:
+	d - Cut
+	y - Copy
+	p - Paste
+
+Deleting:
+	dw - Delete Word
+	d$ - Delete till End of Line
+	d^ - Delete till Start of Line
+	dd - Delete entire Line
+
+Undo & Redo:
+	u      - Undo
+	Ctrl+R - Redo
+
+Replace:
+	r  - Replace single character
+	R  - Replace until exited to normal mode
+	ce - Edit till end of word
+	
+Search:
+	/ - Forward Search
+	? - Backward Search
+	n - Next Occurence
+	N - Previous Occurence
+
+Find and Replace:
+	:s/old/new - Replace 'old' with 'new' 
+		Append /g to replace all occurence in the current line
+		Append /gc to confirm before replacing each occurence
+		Use :%s to perform Find and Replace on whole file
+		Use :1,3s to perform Find and Replace between Line 1 and 3
+
+Shell Commands:
+	:!{cmd} - Executes {cmd}
+
